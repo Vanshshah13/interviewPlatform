@@ -12,7 +12,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin: "https://interview-platform-ten-rho.vercel.app/",
+  origin: "https://interview-platform-ten-rho.vercel.app",
   credentials: true
 }));
 app.use(express.json());
