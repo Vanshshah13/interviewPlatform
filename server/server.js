@@ -12,7 +12,8 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin : "*"
+  origin: "https://interview-platform-ten-rho.vercel.app/://your-frontend.vercel.app",
+  credentials: true
 }));
 app.use(express.json());
 
@@ -23,7 +24,7 @@ app.get("/", (req, res) => {
   res.send("API Running...");
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 
 app.listen(PORT, () =>{
